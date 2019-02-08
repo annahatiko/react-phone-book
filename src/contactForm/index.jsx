@@ -31,10 +31,11 @@ class ContactForm extends Component {
 
     handleInput(event) {
         const field = event.target.name;
-        let contact = Object.assign({}, this.state.contact);
         event.target.value = event.target.value.replace(/[^a-zA-Z]/g,'');
-        contact[field] = event.target.value;
-        return this.setState({ contact: contact });
+        let obj = {};
+        obj[field] = event.target.value;
+        this.setState({ contact: Object.assign({}, this.state.contact,
+                obj) });
     }
 
     handleInputPhone(event, index) {
