@@ -1,0 +1,188 @@
+.contact-book {
+    background: #eee;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 15px;
+    color: #20B2AA;
+}
+
+.main-title {
+    color: #4682B4;
+    text-align: center;
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-field {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.contact-field span {
+    font-weight: 700;
+    color: gray;
+}
+
+.contact-category {
+    color: #7B68EE;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+select {
+    width: 120px;
+    color: black;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    background: transparent;
+    height: 38px;
+    overflow: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.phone-category {
+    margin-right: 20px;
+}
+
+.phone-category > button, .button-add {
+    height: 38px;
+    border-radius: 0 5px 5px 0;
+}
+
+.phone-number {
+    text-align: left;
+}
+
+.input-create {
+    width: 120px;
+    border-radius: 5px 0 0 5px;
+}
+
+.notices-list {
+    background: #D8BFD8;
+    border: 1px solid #1E90FF;
+    padding: 15px;
+    width: 250px;
+}
+
+.notices-list h6 {
+    color: #9370DB;
+}
+
+.birthday-boys-item {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    text-decoration: underline;
+    color: #FF00FF;
+}
+
+.button {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px 10px;
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: rgb(53, 167, 110);
+}
+
+.button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.modal {
+    width: 450px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-field {
+    display: block;
+}
+
+.popup {
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0, .5);
+    padding: 20px;
+}
+
+.popup-title {
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.popup-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.popup-buttons .button {
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    text-shadow: 0 1px 0 #fff;
+    outline: none;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0 #efefef;
+}
+
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.add-another-phone {
+    margin-top: 10px;
+}
+
+.form-error {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    color: darkred;
+}
+
+
+.button-delete {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: 6px;
+    transform: rotate(45deg);
+    line-height: 14px;
+    font-size: 21px;
+    padding: 0 0 6px 0;
+}

@@ -1,12 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { render } from 'react-dom';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import configureStore from './store/configureStore';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let contacts = [];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+let contactsStore;
+
+let options = ['family', 'work', 'friends'];
+
+let optionsStore;
+
+if (JSON.parse(localStorage.getItem('phoneBook')) === null) {
+    localStorage.setItem('phoneBook', JSON.stringify(contacts));
+    contactsStore = contacts;
+} else contactsStore = JSON.parse(localStorage.getItem('phoneBook'));
+
+if (JSON.parse(localStorage.getItem('phoneCategories')) === null) {
+    localStorage.setItem('phoneCategories', JSON.stringify(options));
+    optionsStore = options;
+} else optionsStore = JSON.parse(localStorage.getItem('phoneCategories'));
+
+export const store = configureStore();
+
+render(React.createElement(App, { store }), document.getElementById('root'));
